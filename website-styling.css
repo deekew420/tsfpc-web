@@ -1,0 +1,240 @@
+/* se implementó el modelo de caja para acomodar la sección "posiciones" en la parte derecha ,facilitando así su lectura/
+/* global style */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: underline;
+}
+body {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #80683d;
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* headers (h1-h5) */
+h1 {
+    color: #eeeeee;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    padding: 15px 0; 
+}
+h2 {
+    background-color: burlywood;
+    font-size: x-large;
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h3 {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+h4 {
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 15px; 
+    margin-bottom: 5px; 
+}
+h5 {
+    text-align: left;
+    line-height: 1.5em;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+/* home page featured */
+article.featured_article p {
+    font-weight: bold;
+}
+.featured_article {
+    font-size: medium;
+    padding: 15px;
+    margin-bottom: 20px; 
+}
+
+/* main */
+main {
+    padding: 20px 0; 
+}
+main section article {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 15px; 
+    margin-bottom: 15px;
+}
+main section article h4, 
+main section article h5 {
+   margin-bottom: 5px;
+}
+
+/* navigation */
+nav {
+    background: linear-gradient(to right, #fff75e, #ffd100); 
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #b99700; 
+    color: #fff;              
+    border-radius: 4px;       
+    text-decoration: underline; 
+}
+nav .section_title {
+    color: white;
+    padding: 5px;
+    border-radius: 0;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* text */
+p {
+    word-spacing: normal;
+    text-align: left; 
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+#page_title + p {
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* sections */
+section {
+    background-color: #f0eded;
+    border-radius: 8px;
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+.section_title {
+    background: linear-gradient(to right, #fff75e, #ffd100); 
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* content columns */
+.content-columns {
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+.left-column {
+    float: left;
+    width: 63%; 
+    margin-right: 2%; 
+}
+.right-column {
+    float: right;
+    width: 35%;
+}
+
+/* lists */
+ul {
+    padding-left: 20px;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* tables */
+table {
+    width: 95%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    table-layout: fixed; 
+}
+.table_highlights {
+    background: #ffd000;
+}
+tr.table_highlights:hover { 
+    background-color: #fff75e; 
+    cursor: pointer;          
+}
+table tbody tr:not(.table_highlights):hover {
+    background-color: #e0e0e0;
+    cursor: pointer;          
+}
+th, td {
+    border: 1px solid #ccc; 
+    padding: 2px; 
+    text-align: left;
+    font-size: 0.65em; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+th:first-child,
+td:first-child {
+    width: 6%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+    width: 38%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+    width: 7.5%;
+}
+th:nth-child(n+4),
+td:nth-child(n+4) {
+    width: 6.7%; 
+}
+
+/* footnote */
+footer {
+    text-align: center; 
+    padding: 20px 0; 
+    margin-top: 20px; 
+    background-color: #f0eded;
+    border-radius: 8px; 
+    clear: both; 
+}
+.footer_img {
+    width: 25px;
+    height: 30px;
+}
+.footnote {
+    font-size: x-small;
+    font-style: italic;
+}
+.footnote a:hover {
+    color: red;
+    text-decoration: none; 
+}
